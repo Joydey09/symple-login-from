@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+<style>
+legend {
+            width: 117px;
+            padding: 2px;
+            margin-left: calc(50% - 35px - 10px);
+			 display: inline-block;
+			 
+  border: 1px solid #ccc;
+        }
+		button {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=email],input[name=firstName],input[name=lastName] {
+  width: 38%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type=password] {
+  width: 38%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+label,select {
+  width: 25%;
+  padding: 10px 20px;
+  margin: 8px 0;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+address{
+ display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+fieldset {
+  display: block;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding:40px;
+    border-radius: 5px;
+    box-shadow:0 8px 32px 0 rgba( 0 , 0 , 0 , 0.37 ) ;
+}
+.password {
+margin-right: 10px;
+margin-left: -25px;
+margin-top: -55px;
+}
+.email {
+margin-top: -40px;
+}
+.name {
+margin-top: -20px;
+margin-left: -30px;
+}
+.gender {
+margin-top: -30px;
+}
+.birth {
+margin-top: -20px;
+}
+</style>
+</head>
+<body>
+<form><div>
+	<fieldset>
+	<legend>Registration Form</legend>
+	
+<div class="salutation">
+<p>
+		<label>
+		Salutation
+		<br />
+		<select name="salutation">
+			<option>--None--</option>
+			<option>Mr.</option>
+			<option>Ms.</option>
+			<option>Mrs.</option>
+			<option>Dr.</option>
+			<option>Prof.</option>
+		</select>
+		</label>
+	</p>
+
+</div>
+	
+<div class="name">
+<p>
+		<label>First name: <input name="firstName" /></label>
+	</p>
+
+
+	
+
+<p>
+		<label>Last name: <input name="lastName" /></label>
+	</p>
+</div>
+
+	
+<div class= "gender">
+<p>
+		Gender :
+		<label><input type="radio" name="gender" value="male" /> Male</label>
+		<label><input type="radio" name="gender" value="female" /> Female</label>
+	</p>
+</div>
+
+	
+<div class= "email">
+<p>
+		<label>Email:<input type="email" name="email" /></label>
+	</p>
+	</div>
+<div class= "password">
+<p>
+		<label>Password:<input type="password" name="password" /></label>
+	</p>
+</div>
+<div class=  "birth">
+<p>
+		<label>Date of Birth:<input type="date" name="birthDate"></label>
+	</p>
+	</div>
+<div class= "documents">
+<p>
+What type documents you have
+<ul style="list-style-type:none;">
+      <li><input type="checkbox" name="pan card" value="pan card" />Pan card</li>
+      <li><input type="checkbox" name="aadhar card" value="aadhar card" />Aadhar card</li>
+      <li><input type="checkbox" name="voter card" value="voter card" />Voter card</li>
+    </ul>
+	</p>
+</div>
+<div>
+<p>
+		<label>
+		Address :
+		<br /><br />
+		<textarea name="address" cols="70" rows="7"></textarea>
+		</label>
+	</p>
+</div>
+<div>
+<p>
+
+	<button onclick="location.href='login form.html'" type="button">
+         Submit</button>
+</div>
+	</p>
+	</fieldset></div>
+</form>
+</body>
+</html>
